@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f8c">
+  <meta name="description" content="بيانات التواصل مع إدارة الخبرة والمشورة الفنية - هيئة تنمية صناعة تكنولوجيا المعلومات ITIDA">
+  <title>ITIDA | إدارة الخبرة والمشورة الفنية</title>
+
+  <style>
+    :root {
+      --teal: #087f8c;
+      --green: #23864b;
+      --red: #c52b36;
+      --ink: #18343b;
+      --muted: #61757a;
+      --bg: #f3f8f8;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.8;
+    }
+
+    .topline {
+      height: 7px;
+      background: linear-gradient(
+        90deg,
+        var(--red) 0 33.3%,
+        var(--green) 33.3% 66.6%,
+        var(--teal) 66.6% 100%
+      );
+    }
+
+    header {
+      background: var(--white);
+      text-align: center;
+      padding: 30px 18px 25px;
+      border-bottom: 1px solid #e1ebeb;
+    }
+
+    .itida-logo {
+      display: block;
+      width: 170px;
+      max-width: 65%;
+      height: auto;
+      max-height: 100px;
+      object-fit: contain;
+      margin: 0 auto 18px;
+    }
+
+    h1 {
+      margin: 5px 0 8px;
+      font-size: 25px;
+      line-height: 1.6;
+    }
+
+    .english {
+      direction: ltr;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .ministry {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .department {
+      color: var(--teal);
+      font-size: 19px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .department-en {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    main {
+      width: min(680px, 92%);
+      margin: 30px auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .intro h2 {
+      font-size: 24px;
+      margin: 0 0 3px;
+    }
+
+    .intro p {
+      color: var(--muted);
+      margin: 0;
+      direction: ltr;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: var(--white);
+      padding: 18px;
+      border: 1px solid #e1ebeb;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--ink);
+      box-shadow: 0 4px 14px rgba(23, 60, 60, 0.04);
+      overflow-wrap: anywhere;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .contact:hover {
+      border-color: var(--teal);
+      transform: translateY(-2px);
+    }
+
+    .symbol {
+      display: grid;
+      place-items: center;
+      flex: 0 0 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: #e5f5f5;
+      color: var(--teal);
+      font-size: 23px;
+    }
+
+    .contact strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 2px;
+    }
+
+    .contact small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .value {
+      direction: ltr;
+      text-align: right;
+      display: block;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 22px 15px 30px;
+      border-top: 1px solid #e1ebeb;
+      background: var(--white);
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 24px 15px 20px;
+      }
+
+      .itida-logo {
+        width: 145px;
+      }
+
+      h1 {
+        font-size: 21px;
+      }
+
+      .english {
+        font-size: 14px;
+      }
+
+      .department {
+        font-size: 17px;
+      }
+
+      .contact {
+        padding: 14px;
+        gap: 12px;
+      }
+
+      .contact strong {
+        font-size: 14px;
+      }
+
+      .value {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topline"></div>
+
+  <header>
+    <img
+      class="itida-logo"
+      src="https://www.itida.gov.eg/English/MediaCenter/Events/Documents/ITIDA.logo.png"
+      alt="ITIDA Official Logo"
+    >
+
+    <h1>هيئة تنمية صناعة تكنولوجيا المعلومات</h1>
+
+    <div class="english">
+      Information Technology Industry Development Agency
+    </div>
+
+    <div class="ministry">
+      Ministry of Communications and Information Technology
+    </div>
+
+    <div class="department">
+      إدارة الخبرة والمشورة الفنية
+    </div>
+
+    <div class="english department-en">
+      Technical Consultancy Department
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>تواصل معنا</h2>
+      <p>Contact Us</p>
+    </section>
+
+    <section class="contact-list">
+
+      <a class="contact" href="mailto:dfd@itida.gov.eg">
+        <span class="symbol" aria-hidden="true">✉</span>
+        <span>
+          <strong>البريد الإلكتروني</strong>
+          <small>Email</small>
+          <span class="value">dfd@itida.gov.eg</span>
+        </span>
+      </a>
+
+      <a class="contact" href="tel:+20235345079">
+        <span class="symbol" aria-hidden="true">☎</span>
+        <span>
+          <strong>هاتف المكتب</strong>
+          <small>Office Phone</small>
+          <span class="value">+20 2 3534 5079</span>
+        </span>
+      </a>
+
+      <a class="contact" href="tel:+20235345771">
+        <span class="symbol" aria-hidden="true">☎</span>
+        <span>
+          <strong>هاتف المكتب</strong>
+          <small>Office Phone</small>
+          <span class="value">+20 2 3534 5771</span>
+        </span>
+      </a>
+
+      <a
+        class="contact"
+        href="https://itida.gov.eg/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="symbol" aria-hidden="true">🌐</span>
+        <span>
+          <strong>الموقع الرسمي للهيئة</strong>
+          <small>Official Website</small>
+          <span class="value">itida.gov.eg</span>
+        </span>
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    ITIDA — Information Technology Industry Development Agency
+  </footer>
+</body>
+</html>
