@@ -66,14 +66,12 @@
       font-size: 22px;
       font-weight: bold;
       margin: 5px 0;
-      color: var(--dark);
     }
 
     .english-name {
       font-size: 16px;
       font-weight: bold;
       margin: 5px 0 15px;
-      color: var(--dark);
     }
 
     .department-name {
@@ -146,8 +144,9 @@
     }
 
     .contact-value {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: bold;
+      line-height: 1.7;
       color: var(--dark);
       text-decoration: none;
     }
@@ -156,26 +155,44 @@
       color: var(--green);
     }
 
-    .website {
+    .address {
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1.8;
+    }
+
+    .website,
+    .location-button {
       display: inline-block;
-      margin-top: 24px;
-      padding: 12px 22px;
+      margin: 22px 5px 0;
+      padding: 12px 20px;
       color: #fff;
       background: var(--green);
       text-decoration: none;
       font-weight: bold;
+      font-size: 14px;
       border-radius: 7px;
+      transition: background 0.2s;
     }
 
-    .website:hover {
+    .website:hover,
+    .location-button:hover {
       background: #2e6e39;
+    }
+
+    .location-button {
+      background: var(--turquoise);
+    }
+
+    .location-button:hover {
+      background: #168b8f;
     }
 
     footer {
       text-align: center;
       padding: 20px 16px 28px;
       font-size: 12px;
-      line-height: 1.7;
+      line-height: 1.8;
       color: var(--muted);
     }
 
@@ -208,6 +225,12 @@
       h1 {
         font-size: 25px;
       }
+
+      .website,
+      .location-button {
+        display: block;
+        margin: 14px 0 0;
+      }
     }
   </style>
 </head>
@@ -216,7 +239,6 @@
   <div class="top-line"></div>
 
   <header>
-    <!-- ITIDA logo: image file must be beside index.html -->
     <img
       class="logo"
       src="./itida-logo.png"
@@ -254,24 +276,53 @@
 
       <div class="contact-item">
         <div class="contact-label">Email</div>
-        <a class="contact-value" href="mailto:dfd@itida.gov.eg">
+        <a
+          class="contact-value"
+          href="mailto:dfd@itida.gov.eg"
+        >
           dfd@itida.gov.eg
         </a>
       </div>
 
       <div class="contact-item">
-        <div class="contact-label">Office Phone</div>
-        <a class="contact-value" href="tel:+20235345079">
+        <div class="contact-label">Office Phone 1</div>
+        <a
+          class="contact-value"
+          href="tel:+20235345079"
+        >
           +20 2 3534 5079
         </a>
       </div>
 
       <div class="contact-item">
-        <div class="contact-label">Office Phone</div>
-        <a class="contact-value" href="tel:+20235345771">
+        <div class="contact-label">Office Phone 2</div>
+        <a
+          class="contact-value"
+          href="tel:+20235345771"
+        >
           +20 2 3534 5771
         </a>
       </div>
+
+      <div class="contact-item">
+        <div class="contact-label">Address</div>
+        <div class="contact-value address">
+          Smart Village, Building (B121)<br>
+          Cairo-Alexandria Desert Road<br>
+          Giza, Egypt, P.C: 12577
+        </div>
+      </div>
+
+      <a
+        class="location-button"
+        href="https://maps.app.goo.gl/XnkkibyVKf1hewKY8?g_st=awb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        &#128205; View Location on Google Maps
+      </a>
+
+      <br>
 
       <a
         class="website"
